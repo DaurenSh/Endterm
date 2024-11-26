@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Register Page {% endblock %}
+{% block script %}
+    async function registerUser(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const role = document.getElementById('role').value;
+        const phone_number = document.getElementById('phone_number').value;
+
+        const response = await fetch('/auth/users/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                email: email,
+                password: password,
+                role: role,
+                phone_number: phone_number
+            })
+        });
+
+        if (response.ok) {
+            alert('Registration successful! Please log in.');
+            window.location.href = '/auth/login/';
+        } else {
+            const errorData = await response.json();
+            alert('Error: ' + JSON.stringify(errorData));
+        }
+    }
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Register</h2>
+    <form onsubmit="registerUser(event)" class="w-50 mx-auto">
+        <!-- Username -->
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-3">
+            <label for="phone_number" class="form-label">Phone</label>
+            <input type="text" id="phone_number" name="phone_number" class="form-control">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+
+        <!-- Role -->
+        <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <select id="role" name="role" class="form-select" required>
+                <option value="">Choose a role</option>
+                <option value="1">Admin</option>
+                <option value="2">User</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+</div>
+{% endblock %}

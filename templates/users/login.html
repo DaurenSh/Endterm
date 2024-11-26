@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Login Page {% endblock %}
+{% block script %}
+async function loginUser(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/auth/jwt/create/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                localStorage.setItem('access', data.access);
+                localStorage.setItem('refresh', data.refresh);
+                alert('Login successful!');
+                window.location.href = '/api/product-list/';  // Перенаправление на главную страницу или другую страницу после входа
+            } else {
+                const errorData = await response.json();
+                alert('Error: ' + JSON.stringify(errorData));
+            }
+        }
+
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Login</h2>
+    <form onsubmit="loginUser(event)" class="w-50 mx-auto">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+</div>
+
+{% endblock %}
