@@ -705,3 +705,519 @@ INFO 2024-11-26 20:26:17,618 views Register page accessed
 INFO 2024-11-26 20:26:17,634 basehttp "GET /auth/register/ HTTP/1.1" 200 3623
 INFO 2024-11-26 20:26:24,297 views Login page accessed
 INFO 2024-11-26 20:26:24,298 basehttp "GET /auth/login/ HTTP/1.1" 200 3180
+INFO 2024-11-26 20:27:03,089 views Login page accessed
+INFO 2024-11-26 20:27:03,090 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:27:03,592 views Transactions list accessed by AnonymousUser
+INFO 2024-11-26 20:27:03,610 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 4442
+INFO 2024-11-26 20:27:04,910 views Transactions list accessed by AnonymousUser
+INFO 2024-11-26 20:27:04,920 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 4442
+INFO 2024-11-26 20:29:03,590 views Transactions list accessed by AnonymousUser
+INFO 2024-11-26 20:29:03,601 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5576
+INFO 2024-11-26 20:29:08,945 views Login page accessed
+INFO 2024-11-26 20:29:08,947 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:31:03,536 views Login page accessed
+INFO 2024-11-26 20:31:03,537 basehttp "GET /auth/login/ HTTP/1.1" 200 3414
+INFO 2024-11-26 20:31:08,651 views Login page accessed
+INFO 2024-11-26 20:31:08,653 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3414
+INFO 2024-11-26 20:31:25,502 views Login page accessed
+INFO 2024-11-26 20:31:25,502 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3414
+INFO 2024-11-26 20:31:53,953 views Login page accessed
+INFO 2024-11-26 20:31:53,954 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3414
+INFO 2024-11-26 20:32:26,391 views Login page accessed
+INFO 2024-11-26 20:32:26,392 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:32:30,080 views Login page accessed
+INFO 2024-11-26 20:32:30,080 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:32:53,056 views Login page accessed
+INFO 2024-11-26 20:32:53,057 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:32:53,432 views Login page accessed
+INFO 2024-11-26 20:32:53,432 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:32:53,601 views Login page accessed
+INFO 2024-11-26 20:32:53,601 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:32:53,758 views Login page accessed
+INFO 2024-11-26 20:32:53,759 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:33:00,300 views Login page accessed
+INFO 2024-11-26 20:33:00,301 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:33:05,370 views Login page accessed
+INFO 2024-11-26 20:33:05,371 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:33:13,138 views Login page accessed
+INFO 2024-11-26 20:33:13,138 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:33:19,764 views Login page accessed
+INFO 2024-11-26 20:33:19,765 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:34:08,946 views Login page accessed
+INFO 2024-11-26 20:34:08,948 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:34:09,138 views Login page accessed
+INFO 2024-11-26 20:34:09,138 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:34:12,568 views Login page accessed
+INFO 2024-11-26 20:34:12,569 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:34:33,720 views Login page accessed
+INFO 2024-11-26 20:34:33,721 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+WARNING 2024-11-26 20:34:33,996 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:34:33,996 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:34:34,217 views Login page accessed
+INFO 2024-11-26 20:34:34,218 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+WARNING 2024-11-26 20:34:34,344 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:34:34,345 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:34:34,585 views Login page accessed
+INFO 2024-11-26 20:34:34,586 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+WARNING 2024-11-26 20:34:34,709 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:34:34,709 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:34:43,670 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:34:47,637 log Not Found: /
+WARNING 2024-11-26 20:34:47,638 basehttp "GET / HTTP/1.1" 404 3267
+INFO 2024-11-26 20:35:13,940 views Login page accessed
+INFO 2024-11-26 20:35:13,942 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:35:14,729 views Login page accessed
+INFO 2024-11-26 20:35:14,730 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:35:21,575 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:35:23,374 log Not Found: /
+WARNING 2024-11-26 20:35:23,375 basehttp "GET / HTTP/1.1" 404 3267
+INFO 2024-11-26 20:35:29,315 views Login page accessed
+INFO 2024-11-26 20:35:29,316 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3257
+INFO 2024-11-26 20:36:21,958 views Login page accessed
+INFO 2024-11-26 20:36:21,960 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+WARNING 2024-11-26 20:36:22,414 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:36:22,414 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:36:22,790 views Login page accessed
+INFO 2024-11-26 20:36:22,791 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+WARNING 2024-11-26 20:36:23,083 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:36:23,084 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:36:23,130 views Login page accessed
+INFO 2024-11-26 20:36:23,131 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+WARNING 2024-11-26 20:36:23,418 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:36:23,419 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:36:23,430 views Login page accessed
+INFO 2024-11-26 20:36:23,431 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+WARNING 2024-11-26 20:36:23,718 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:36:23,718 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:36:33,402 views Login page accessed
+INFO 2024-11-26 20:36:33,403 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:34,988 views Login page accessed
+INFO 2024-11-26 20:36:34,989 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:35,361 views Login page accessed
+INFO 2024-11-26 20:36:35,362 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:35,554 views Login page accessed
+INFO 2024-11-26 20:36:35,556 basehttp "GET /auth/login/ HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:39,437 views Login page accessed
+INFO 2024-11-26 20:36:39,438 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:43,136 views Login page accessed
+INFO 2024-11-26 20:36:43,137 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:43,563 views Login page accessed
+INFO 2024-11-26 20:36:43,564 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:43,733 views Login page accessed
+INFO 2024-11-26 20:36:43,734 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:43,873 views Login page accessed
+INFO 2024-11-26 20:36:43,874 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:49,198 views Login page accessed
+INFO 2024-11-26 20:36:49,199 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:50,811 views Login page accessed
+INFO 2024-11-26 20:36:50,812 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:51,057 views Login page accessed
+INFO 2024-11-26 20:36:51,058 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:36:51,227 views Login page accessed
+INFO 2024-11-26 20:36:51,228 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3301
+INFO 2024-11-26 20:37:43,830 views Login page accessed
+INFO 2024-11-26 20:37:43,832 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+INFO 2024-11-26 20:37:44,105 views Login page accessed
+INFO 2024-11-26 20:37:44,106 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:44,237 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:44,240 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:44,302 views Login page accessed
+INFO 2024-11-26 20:37:44,304 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:44,433 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:44,434 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:44,513 views Login page accessed
+INFO 2024-11-26 20:37:44,514 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:44,646 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:44,646 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:44,738 views Login page accessed
+INFO 2024-11-26 20:37:44,739 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:44,873 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:44,873 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:44,933 views Login page accessed
+INFO 2024-11-26 20:37:44,935 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:45,071 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:45,071 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:45,126 views Login page accessed
+INFO 2024-11-26 20:37:45,127 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:45,258 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:45,261 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:45,335 views Login page accessed
+INFO 2024-11-26 20:37:45,336 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3320
+WARNING 2024-11-26 20:37:45,468 log Not Found: /favicon.ico
+WARNING 2024-11-26 20:37:45,468 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-26 20:37:54,930 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:37:55,950 log Not Found: /
+WARNING 2024-11-26 20:37:55,951 basehttp "GET / HTTP/1.1" 404 3267
+INFO 2024-11-26 20:38:28,416 views Transactions list accessed by AnonymousUser
+INFO 2024-11-26 20:38:28,426 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5595
+INFO 2024-11-26 20:38:29,972 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-26 20:38:29,994 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 74
+INFO 2024-11-26 20:38:31,663 views Login page accessed
+INFO 2024-11-26 20:38:31,664 basehttp "GET /auth/login/ HTTP/1.1" 200 3320
+INFO 2024-11-26 20:38:32,493 views Register page accessed
+INFO 2024-11-26 20:38:32,494 basehttp "GET /auth/register/ HTTP/1.1" 200 3763
+INFO 2024-11-26 20:39:03,378 views Login page accessed
+INFO 2024-11-26 20:39:03,380 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:39:18,036 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:39:19,791 log Not Found: /
+WARNING 2024-11-26 20:39:19,792 basehttp "GET / HTTP/1.1" 404 3267
+INFO 2024-11-26 20:40:06,477 views Login page accessed
+INFO 2024-11-26 20:40:06,517 basehttp "GET /auth/login/ HTTP/1.1" 200 3612
+INFO 2024-11-26 20:40:10,710 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:40:11,544 log Not Found: /product-list
+WARNING 2024-11-26 20:40:11,545 basehttp "GET /product-list HTTP/1.1" 404 3321
+INFO 2024-11-26 20:40:36,108 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:40:37,019 log Not Found: /product-list
+WARNING 2024-11-26 20:40:37,019 basehttp "GET /product-list HTTP/1.1" 404 3321
+WARNING 2024-11-26 20:40:38,799 log Not Found: /product-list
+WARNING 2024-11-26 20:40:38,800 basehttp "GET /product-list HTTP/1.1" 404 3321
+INFO 2024-11-26 20:40:39,765 views Login page accessed
+INFO 2024-11-26 20:40:39,768 basehttp "GET /auth/login/ HTTP/1.1" 200 3616
+INFO 2024-11-26 20:40:47,745 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:40:48,722 log Not Found: /auth/login/api/product-list/
+WARNING 2024-11-26 20:40:48,722 basehttp "GET /auth/login/api/product-list/ HTTP/1.1" 404 14901
+INFO 2024-11-26 20:41:07,037 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:41:07,693 log Not Found: /auth/login/api/product-list/
+WARNING 2024-11-26 20:41:07,693 basehttp "GET /auth/login/api/product-list/ HTTP/1.1" 404 14901
+INFO 2024-11-26 20:41:09,845 views Login page accessed
+INFO 2024-11-26 20:41:09,847 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:14,220 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-11-26 20:41:15,092 log Not Found: /
+WARNING 2024-11-26 20:41:15,093 basehttp "GET / HTTP/1.1" 404 3267
+INFO 2024-11-26 20:41:18,223 views Login page accessed
+INFO 2024-11-26 20:41:18,224 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:18,452 views Login page accessed
+INFO 2024-11-26 20:41:18,453 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:18,600 views Login page accessed
+INFO 2024-11-26 20:41:18,601 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:18,741 views Login page accessed
+INFO 2024-11-26 20:41:18,741 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:18,861 views Login page accessed
+INFO 2024-11-26 20:41:18,862 basehttp "GET /auth/login/ HTTP/1.1" 200 3600
+INFO 2024-11-26 20:41:27,126 views Login page accessed
+INFO 2024-11-26 20:41:27,130 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:27,259 views Login page accessed
+INFO 2024-11-26 20:41:27,260 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:27,395 views Login page accessed
+INFO 2024-11-26 20:41:27,396 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:27,519 views Login page accessed
+INFO 2024-11-26 20:41:27,520 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:27,642 views Login page accessed
+INFO 2024-11-26 20:41:27,643 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:30,657 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-26 20:41:31,536 views Product list accessed by AnonymousUser
+INFO 2024-11-26 20:41:31,543 basehttp "GET /api/product-list/ HTTP/1.1" 200 2870
+INFO 2024-11-26 20:41:36,212 views Register page accessed
+INFO 2024-11-26 20:41:36,213 basehttp "GET /auth/register/ HTTP/1.1" 200 3763
+INFO 2024-11-26 20:41:36,726 views Login page accessed
+INFO 2024-11-26 20:41:36,727 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:41:38,495 views Register page accessed
+INFO 2024-11-26 20:41:38,496 basehttp "GET /auth/register/ HTTP/1.1" 200 3763
+INFO 2024-11-26 20:44:23,294 views Register page accessed
+INFO 2024-11-26 20:44:23,295 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-26 20:44:41,010 basehttp "POST /auth/users/ HTTP/1.1" 201 82
+INFO 2024-11-26 20:44:42,369 views Login page accessed
+INFO 2024-11-26 20:44:42,370 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:44:51,946 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-11-26 20:44:52,001 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2024-11-26 20:44:52,008 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-11-26 20:44:58,682 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-11-26 20:44:58,696 basehttp "GET /admin/ HTTP/1.1" 200 14303
+INFO 2024-11-26 20:45:02,003 basehttp "GET /admin/users/user/ HTTP/1.1" 200 13381
+INFO 2024-11-26 20:45:02,011 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,011 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,015 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,016 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,016 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,017 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,018 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,018 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,018 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,026 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:02,040 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-26 20:45:02,056 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,323 basehttp "GET /admin/users/user/6/change/ HTTP/1.1" 200 27716
+INFO 2024-11-26 20:45:09,332 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,332 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,332 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,333 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,335 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-26 20:45:09,337 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,338 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,339 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,373 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:09,373 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-26 20:45:13,033 views Login page accessed
+INFO 2024-11-26 20:45:13,034 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-26 20:45:13,392 views Register page accessed
+INFO 2024-11-26 20:45:13,393 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-26 20:45:13,726 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-26 20:45:13,747 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 74
+INFO 2024-11-26 20:45:14,078 views Daily report list accessed by admin (Admin)
+INFO 2024-11-26 20:45:14,082 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3268
+INFO 2024-11-26 20:45:14,591 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-26 20:45:14,594 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2807
+INFO 2024-11-26 20:45:14,904 views Transactions list accessed by admin (Admin)
+INFO 2024-11-26 20:45:14,927 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5595
+INFO 2024-11-26 20:45:15,597 views Product list accessed by admin (Admin)
+INFO 2024-11-26 20:45:15,603 basehttp "GET /api/product-list/ HTTP/1.1" 200 2870
+INFO 2024-11-26 20:45:16,700 views Transactions list accessed by admin (Admin)
+INFO 2024-11-26 20:45:16,717 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5595
+INFO 2024-11-26 20:45:19,718 views Daily report list accessed by admin (Admin)
+INFO 2024-11-26 20:45:19,720 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3268
+INFO 2024-11-26 20:45:20,237 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-26 20:45:20,263 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 74
+INFO 2024-11-26 20:45:20,961 views Product list accessed by admin (Admin)
+INFO 2024-11-26 20:45:20,966 basehttp "GET /api/product-list/ HTTP/1.1" 200 2870
+INFO 2024-11-26 20:46:18,244 views Product list accessed by admin (Admin)
+INFO 2024-11-26 20:46:18,247 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-27 09:53:36,066 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-27 09:53:40,368 log Not Found: /
+WARNING 2024-11-27 09:53:40,369 basehttp "GET / HTTP/1.1" 404 3267
+WARNING 2024-11-27 09:53:40,475 log Not Found: /favicon.ico
+WARNING 2024-11-27 09:53:40,476 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+WARNING 2024-11-27 09:53:48,873 log Not Found: /students/register/
+WARNING 2024-11-27 09:53:48,873 basehttp "GET /students/register/ HTTP/1.1" 404 3339
+WARNING 2024-11-27 09:53:54,715 log Not Found: /register/
+WARNING 2024-11-27 09:53:54,716 basehttp "GET /register/ HTTP/1.1" 404 3312
+INFO 2024-11-27 09:54:03,044 views Register page accessed
+INFO 2024-11-27 09:54:03,144 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-27 09:54:09,903 views Product list accessed by admin (Admin)
+INFO 2024-11-27 09:54:09,933 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-27 09:54:11,686 views Login page accessed
+INFO 2024-11-27 09:54:11,717 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-27 09:54:12,891 views Register page accessed
+INFO 2024-11-27 09:54:12,893 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-27 09:54:13,887 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:54:14,340 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:54:14,341 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:54:17,095 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:54:17,122 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:54:17,123 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:54:18,169 views Daily report list accessed by admin (Admin)
+INFO 2024-11-27 09:54:18,190 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3268
+INFO 2024-11-27 09:54:19,418 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-27 09:54:19,437 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2807
+INFO 2024-11-27 09:54:21,999 views Daily report list accessed by admin (Admin)
+INFO 2024-11-27 09:54:22,006 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3268
+INFO 2024-11-27 09:54:25,731 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-27 09:54:25,736 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2807
+INFO 2024-11-27 09:54:27,766 views Transactions list accessed by admin (Admin)
+INFO 2024-11-27 09:54:27,836 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5595
+INFO 2024-11-27 09:54:30,545 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-27 09:54:30,551 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2807
+INFO 2024-11-27 09:55:06,025 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-11-27 09:55:06,305 basehttp "GET /api/schema/ HTTP/1.1" 200 105264
+INFO 2024-11-27 09:55:57,054 views Login page accessed
+INFO 2024-11-27 09:55:57,056 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-27 09:56:22,798 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:56:22,836 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:56:22,837 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:56:24,222 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:56:24,245 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:56:24,246 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:57:11,293 basehttp "GET /api/analytics/ HTTP/1.1" 200 4234
+WARNING 2024-11-27 09:57:11,323 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:57:11,324 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:57:12,576 basehttp "GET /api/analytics/ HTTP/1.1" 200 4234
+WARNING 2024-11-27 09:57:12,604 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:57:12,605 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:57:14,690 basehttp "GET /api/analytics/ HTTP/1.1" 200 4234
+WARNING 2024-11-27 09:57:14,721 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:57:14,722 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:58:50,166 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:58:50,193 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:58:50,194 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 09:58:51,829 views Register page accessed
+INFO 2024-11-27 09:58:51,831 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-27 09:59:59,675 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 09:59:59,718 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 09:59:59,719 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:00,908 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:00,933 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:00,934 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:03,064 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:03,119 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:03,121 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:12,032 views Daily report list accessed by admin (Admin)
+INFO 2024-11-27 10:00:12,038 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3268
+INFO 2024-11-27 10:00:12,550 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-27 10:00:12,559 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2807
+INFO 2024-11-27 10:00:12,966 views Transactions list accessed by admin (Admin)
+INFO 2024-11-27 10:00:13,005 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5595
+INFO 2024-11-27 10:00:13,440 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:13,476 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:13,477 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:14,261 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:14,285 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:14,285 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:14,441 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:14,461 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:14,461 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:14,647 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:14,668 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:14,669 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:15,680 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-11-27 10:00:16,081 basehttp "GET /api/schema/ HTTP/1.1" 200 105264
+INFO 2024-11-27 10:00:23,658 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-27 10:00:23,677 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-27 10:00:23,677 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-27 10:00:46,909 views Login page accessed
+INFO 2024-11-27 10:00:46,912 basehttp "GET /auth/login/ HTTP/1.1" 200 3599
+INFO 2024-11-27 10:01:04,688 views Login page accessed
+INFO 2024-11-27 10:01:04,690 basehttp "GET /auth/login/?username=admin&password=1234 HTTP/1.1" 200 3599
+INFO 2024-11-27 10:01:08,108 views Login page accessed
+INFO 2024-11-27 10:01:08,110 basehttp "GET /auth/login/ HTTP/1.1" 200 3599
+INFO 2024-11-27 10:01:10,086 views Login page accessed
+INFO 2024-11-27 10:01:10,088 basehttp "GET /auth/login/ HTTP/1.1" 200 3599
+INFO 2024-11-27 10:01:11,815 basehttp "GET /api/analytics/ HTTP/1.1" 200 4215
+INFO 2024-11-27 10:01:25,543 views Login page accessed
+INFO 2024-11-27 10:01:25,546 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-27 10:01:30,998 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-27 10:01:32,028 views Product list accessed by admin (Admin)
+INFO 2024-11-27 10:01:32,037 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-27 10:01:37,390 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-27 10:01:37,421 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 74
+WARNING 2024-11-27 10:01:47,536 log Not Found: /
+WARNING 2024-11-27 10:01:47,536 basehttp "GET / HTTP/1.1" 404 3267
+WARNING 2024-11-27 10:01:47,750 log Not Found: /favicon.ico
+WARNING 2024-11-27 10:01:47,750 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-27 10:01:56,255 views Login page accessed
+INFO 2024-11-27 10:01:56,257 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-28 20:18:54,584 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:19:09,200 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-11-28 20:19:09,356 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2024-11-28 20:19:09,369 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,369 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,370 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,372 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,372 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,372 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:09,380 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2024-11-28 20:19:09,422 log Not Found: /favicon.ico
+WARNING 2024-11-28 20:19:09,423 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-28 20:19:16,381 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-11-28 20:19:16,410 basehttp "GET /admin/ HTTP/1.1" 200 14303
+INFO 2024-11-28 20:19:16,414 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:16,419 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:16,419 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:19:16,419 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:26:10,308 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:26:10,844 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:26:26,968 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:26:27,476 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:27:23,909 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:27:24,387 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:27:44,723 basehttp "GET /admin/transactions/transaction/add/ HTTP/1.1" 200 16238
+INFO 2024-11-28 20:27:44,733 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,737 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,738 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,739 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,740 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,741 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,742 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,743 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,743 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,743 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,743 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,748 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,750 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:27:44,761 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-28 20:28:15,129 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-11-28 20:29:07,019 basehttp "POST /admin/transactions/transaction/add/ HTTP/1.1" 302 0
+INFO 2024-11-28 20:29:07,110 basehttp "GET /admin/transactions/transaction/ HTTP/1.1" 200 16322
+INFO 2024-11-28 20:29:07,116 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:29:07,121 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:29:07,122 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-28 20:29:07,133 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:29:07,134 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:31:09,773 views Creating Daily Report for category Technic
+INFO 2024-11-28 20:31:09,780 views Daily Report with id 5 cached.
+INFO 2024-11-28 20:31:09,780 basehttp "POST /api/daily-reports/ HTTP/1.1" 201 181
+INFO 2024-11-28 20:31:36,011 basehttp "GET /admin/reports/dailyreport/ HTTP/1.1" 200 13436
+INFO 2024-11-28 20:31:36,021 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-28 20:31:38,222 basehttp "GET /admin/reports/dailyreport/3/change/ HTTP/1.1" 200 17233
+INFO 2024-11-28 20:31:38,229 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:31:38,229 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:31:38,231 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-28 20:31:38,253 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-28 20:31:55,352 basehttp "GET /api/daily-reports/ HTTP/1.1" 200 951
+INFO 2024-11-28 20:32:03,429 views Daily Report with id 4 cached.
+INFO 2024-11-28 20:32:03,429 basehttp "GET /api/daily-reports/4/ HTTP/1.1" 200 178
+INFO 2024-11-28 20:33:27,390 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:33:27,922 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:34:02,361 views Daily report list accessed by admin (Admin)
+ERROR 2024-11-28 20:34:02,524 log Internal Server Error: /api/daily-reports-list/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py", line 134, in daily_report_list
+    cache.set(cache_key, reports, timeout=600)  # Timeout - 600 секунд (10 минут)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 81, in set
+    return self.client.set(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 143, in set
+    nvalue = self.encode(value)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 461, in encode
+    value = self._serializer.dumps(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\serializers\json.py", line 13, in dumps
+    return json.dumps(value, cls=self.encoder_class).encode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+ERROR 2024-11-28 20:34:02,526 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 500 114213
+INFO 2024-11-28 20:38:40,213 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:38:40,779 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:38:58,969 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:38:59,565 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:40:06,475 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:40:06,952 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:40:24,084 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:40:24,568 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-28 20:40:26,390 log Not Found: /
+WARNING 2024-11-28 20:40:26,390 basehttp "GET / HTTP/1.1" 404 3267
+WARNING 2024-11-28 20:40:28,822 log Unauthorized: /api/daily-reports-list/
+WARNING 2024-11-28 20:40:28,822 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 401 5249
+INFO 2024-11-28 20:40:28,832 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,833 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,833 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,835 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,836 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,836 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,836 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,836 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,837 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,838 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,838 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-28 20:40:28,840 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-11-28 20:41:57,762 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:41:58,247 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:42:00,945 views Daily report list accessed by admin (Admin)
+INFO 2024-11-28 20:42:00,984 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-11-28 20:43:29,073 autoreload C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py changed, reloading.
+INFO 2024-11-28 20:43:29,626 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 20:43:40,282 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-28 20:43:40,322 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782

@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'djoser',
     'rest_framework_simplejwt',
     'drf_spectacular',
+    'django_redis',
+    'redis'
 ]
 
 MIDDLEWARE = [
@@ -157,7 +159,6 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
-# Настройки djoser
 DJOSER = {
     'USER_ID_FIELD': 'username',
     'LOGIN_FIELD': 'email',
@@ -167,7 +168,6 @@ DJOSER = {
     },
 }
 
-# Подключаем сайт
 SITE_ID = 1
 
 AUTH_USER_MODEL = 'users.User'
@@ -221,3 +221,18 @@ LOGGING = {
         },
     },
 }
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "SERIALIZER": "django_redis.serializers.json.JSONSerializer",
+        },
+    }
+}
+
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"

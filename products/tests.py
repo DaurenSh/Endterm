@@ -8,19 +8,16 @@ from users.models import User
 from .models import Category, Product
 
 
-# Base test case with setup for admin user and JWT tokens
+
 class BaseAPITest(APITestCase):
     def setUp(self):
-        # Удаляем все записи перед началом теста
         Category.objects.all().delete()
         Product.objects.all().delete()
         Role.objects.all().delete()
         User.objects.all().delete()
 
-        # Создаём роль "Admin"
         self.admin_role = Role.objects.create(name="Admin")
 
-        # Создаём пользователя с ролью администратора
         self.admin_user = User.objects.create_user(
             username="admin",
             password="admin123",
@@ -33,7 +30,7 @@ class BaseAPITest(APITestCase):
         }
 
 
-# Tests for the Category model
+
 class CategoryModelTest(TestCase):
     def setUp(self):
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
@@ -44,7 +41,6 @@ class CategoryModelTest(TestCase):
         self.assertEqual(str(self.category), "Electronics")
 
 
-# Tests for the Product model
 class ProductModelTest(TestCase):
     def setUp(self):
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
@@ -67,11 +63,9 @@ class ProductModelTest(TestCase):
         self.assertEqual(str(self.product), "Smartphone")
 
 
-# Tests for the Category API
 class CategoryAPITest(BaseAPITest):
     def setUp(self):
         super().setUp()
-        # Создаём только одну категорию для текущего теста
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
         self.category_url = reverse('category-list')
 
@@ -88,11 +82,9 @@ class CategoryAPITest(BaseAPITest):
         self.assertEqual(Category.objects.last().name, "Furniture")
 
 
-# Tests for the Product API
 class ProductAPITest(BaseAPITest):
     def setUp(self):
         super().setUp()
-        # Создаём категорию и продукт для текущего теста
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
         self.product = Product.objects.create(
             name="Smartphone",
@@ -124,7 +116,6 @@ class ProductAPITest(BaseAPITest):
         self.assertEqual(Product.objects.last().name, "Smartphone")
 
 
-# Tests for the Product List View (HTML)
 class ProductListViewTest(TestCase):
     def setUp(self):
         self.role = Role.objects.create(name="Admin")

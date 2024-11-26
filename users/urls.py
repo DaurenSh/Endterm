@@ -9,6 +9,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('', include('djoser.urls')),
     path('', include('djoser.urls.jwt')),
-    path('register/', RegisterPageView.as_view(), name='register_page'),  # Отображение страницы регистрации
+    path('register/', RegisterPageView.as_view(), name='register_page'),
     path('login/', LoginPageView.as_view(), name='login_page'),
 ]

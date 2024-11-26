@@ -8,20 +8,17 @@ from products.models import Product, Category
 from .models import Transaction
 
 
-# Base test case with setup for admin user and JWT tokens
 class BaseAPITest(APITestCase):
     def setUp(self):
-        # Очистка базы данных
+
         Transaction.objects.all().delete()
         Product.objects.all().delete()
         Category.objects.all().delete()
         User.objects.all().delete()
         Role.objects.all().delete()
 
-        # Создаём роль "Admin"
         self.admin_role = Role.objects.create(name="Admin")
 
-        # Создаём пользователя с ролью администратора
         self.admin_user = User.objects.create_user(
             username="admin",
             password="admin123",
@@ -34,7 +31,6 @@ class BaseAPITest(APITestCase):
         }
 
 
-# Tests for the Transaction model
 from django.test import TestCase
 from users.models import Role, User
 from products.models import Product, Category
@@ -42,17 +38,14 @@ from .models import Transaction
 
 class TransactionModelTest(TestCase):
     def setUp(self):
-        # Очистка базы данных
         Transaction.objects.all().delete()
         Product.objects.all().delete()
         Category.objects.all().delete()
         User.objects.all().delete()
         Role.objects.all().delete()
 
-        # Создаём роль
         self.admin_role = Role.objects.create(name="Admin")
 
-        # Создаём категорию, продукт и пользователя
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
         self.product = Product.objects.create(
             name="Smartphone",
@@ -82,12 +75,9 @@ class TransactionModelTest(TestCase):
         self.assertIsNotNone(transaction.timestamp)
 
 
-
-# Tests for the Transaction API
 class TransactionAPITest(BaseAPITest):
     def setUp(self):
         super().setUp()
-        # Создаём категорию и продукт
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
         self.product = Product.objects.create(
             name="Smartphone",
@@ -97,7 +87,6 @@ class TransactionAPITest(BaseAPITest):
             pv_points=50,
             category=self.category
         )
-        # Эндпоинт для транзакций
         self.transaction_url = reverse('transaction-list')
 
     def test_create_transaction(self):
@@ -117,7 +106,6 @@ class TransactionAPITest(BaseAPITest):
         self.assertEqual(transaction.responsible_user, self.admin_user)
 
     def test_get_transactions(self):
-        # Создаём транзакцию
         Transaction.objects.create(
             transaction_type="acceptance",
             product=self.product,
@@ -128,7 +116,6 @@ class TransactionAPITest(BaseAPITest):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_update_transaction(self):
-        # Создаём транзакцию
         transaction = Transaction.objects.create(
             transaction_type="acceptance",
             product=self.product,
@@ -149,7 +136,6 @@ class TransactionAPITest(BaseAPITest):
         self.assertEqual(transaction.quantity, 3)
 
     def test_delete_transaction(self):
-        # Создаём транзакцию
         transaction = Transaction.objects.create(
             transaction_type="acceptance",
             product=self.product,

@@ -29,7 +29,7 @@ urlpatterns = [
     path('api/', include('products.urls')),
     path('api/', include('transactions.urls')),
     path('api/', include('reports.urls')),
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),  # Генерация схемы
-    path('api/docs/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),  # Swagger UI
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('api/docs/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/docs/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]

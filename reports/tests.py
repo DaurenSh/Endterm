@@ -8,19 +8,15 @@ from .models import DailyReport, MonthlyReport
 from datetime import date
 
 
-# Тестирование моделей DailyReport и MonthlyReport
 class ReportModelTest(TestCase):
     def setUp(self):
-        # Очистка базы данных
         Role.objects.all().delete()
         Category.objects.all().delete()
         User.objects.all().delete()
 
-        # Создаём роль и пользователя
         self.admin_role = Role.objects.create(name="Admin")
         self.user = User.objects.create_user(username="admin", password="admin123", role=self.admin_role)
 
-        # Создаём категорию
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
 
     def test_daily_report_creation(self):
@@ -52,27 +48,22 @@ class ReportModelTest(TestCase):
         self.assertEqual(report.report_generated_by, self.user)
 
 
-# Тестирование API для отчётов
 class ReportAPITest(APITestCase):
     def setUp(self):
-        # Очистка базы данных
         Role.objects.all().delete()
         User.objects.all().delete()
         Category.objects.all().delete()
 
-        # Создаём роль, пользователя и категорию
         self.admin_role = Role.objects.create(name="Admin")
         self.user = User.objects.create_user(username="admin", password="admin123", role=self.admin_role)
         self.category = Category.objects.create(name="Electronics", description="Devices and gadgets")
 
-        # Генерируем JWT токен
         response = self.client.post(reverse('jwt-create'), {'username': 'admin', 'password': 'admin123'})
         self.token = f"Bearer {response.data['access']}"
         self.auth_headers = {
             "HTTP_AUTHORIZATION": self.token
         }
 
-        # Эндпоинты
         self.daily_report_url = reverse('daily-report-list')
         self.monthly_report_url = reverse('monthly-report-list')
 

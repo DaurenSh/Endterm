@@ -6,7 +6,6 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .models import User, Role
 
 
-# Тестирование моделей Role и User
 class UserModelTest(TestCase):
     def setUp(self):
         Role.objects.all().delete()
@@ -36,17 +35,13 @@ class UserModelTest(TestCase):
         self.assertEqual(self.regular_user.role.name, "User")
 
 
-# Тестирование API для User
 class UserAPITest(APITestCase):
     def setUp(self):
-        # Очистка базы данных перед тестом
         Role.objects.all().delete()
         User.objects.all().delete()
 
-        # Создаём роль
         self.user_role = Role.objects.create(name="User", description="Regular user role")
 
-        # Создаём пользователя
         self.user = User.objects.create_user(
             username="testuser",
             email="testuser@example.com",
@@ -54,7 +49,6 @@ class UserAPITest(APITestCase):
             role=self.user_role
         )
 
-        # Генерируем JWT токен
         self.token = str(RefreshToken.for_user(self.user).access_token)
         self.auth_headers = {
             "HTTP_AUTHORIZATION": f"Bearer {self.token}"
@@ -75,7 +69,7 @@ class UserAPITest(APITestCase):
         self.assertEqual(User.objects.last().username, "newuser")
 
     def test_login_user(self):
-        url = reverse('jwt-create')  # Эндпоинт для JWT токена
+        url = reverse('jwt-create')
         data = {"username": "testuser", "password": "testpassword"}
         response = self.client.post(url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
