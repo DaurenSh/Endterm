@@ -1222,3 +1222,41 @@ INFO 2024-11-28 20:43:29,626 autoreload Watching for file changes with StatReloa
 INFO 2024-11-28 20:43:40,282 views Monthly report list accessed by admin (Admin)
 INFO 2024-11-28 20:43:40,322 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
 INFO 2024-11-28 20:59:38,437 autoreload Watching for file changes with StatReloader
+INFO 2024-11-28 21:01:29,346 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-28 21:01:40,967 log Not Found: /students/register/
+WARNING 2024-11-28 21:01:40,967 basehttp "GET /students/register/ HTTP/1.1" 404 3339
+INFO 2024-11-28 21:01:49,910 views Product list accessed by admin (Admin)
+INFO 2024-11-28 21:01:49,951 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-28 21:01:50,884 views Login page accessed
+INFO 2024-11-28 21:01:50,897 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-28 21:01:51,274 views Register page accessed
+INFO 2024-11-28 21:01:51,288 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-28 21:01:51,616 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-28 21:01:51,681 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-28 21:01:51,681 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-28 21:01:51,989 views Daily report list accessed by admin (Admin)
+INFO 2024-11-28 21:01:51,996 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-11-28 21:01:52,431 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+WARNING 2024-11-28 21:01:52,442 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-28 21:01:52,443 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 183
+INFO 2024-11-28 21:01:53,661 views Login page accessed
+INFO 2024-11-28 21:01:53,662 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-28 21:01:57,071 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-28 21:01:58,387 views Product list accessed by admin (Admin)
+INFO 2024-11-28 21:01:58,392 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-28 21:01:58,927 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-28 21:01:58,943 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-11-28 21:02:09,584 views Returning daily reports from cache for user admin (Admin)
+INFO 2024-11-28 21:02:09,585 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-11-28 21:02:10,098 views Monthly report list accessed by admin (Admin)
+INFO 2024-11-28 21:02:10,104 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-11-28 21:02:10,784 views Transactions list accessed by admin (Admin)
+INFO 2024-11-28 21:02:10,816 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-11-28 21:02:12,641 views Returning daily reports from cache for user admin (Admin)
+INFO 2024-11-28 21:02:12,644 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-11-28 21:02:12,888 views Register page accessed
+INFO 2024-11-28 21:02:12,889 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-28 21:02:13,226 views Login page accessed
+INFO 2024-11-28 21:02:13,227 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-28 21:02:14,393 views Product list accessed by admin (Admin)
+INFO 2024-11-28 21:02:14,399 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
