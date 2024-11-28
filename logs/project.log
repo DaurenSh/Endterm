@@ -1260,3 +1260,392 @@ INFO 2024-11-28 21:02:13,226 views Login page accessed
 INFO 2024-11-28 21:02:13,227 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
 INFO 2024-11-28 21:02:14,393 views Product list accessed by admin (Admin)
 INFO 2024-11-28 21:02:14,399 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-29 00:29:23,684 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-29 00:29:27,432 log Not Found: /
+WARNING 2024-11-29 00:29:27,432 basehttp "GET / HTTP/1.1" 404 3267
+WARNING 2024-11-29 00:29:27,530 log Not Found: /favicon.ico
+WARNING 2024-11-29 00:29:27,530 basehttp "GET /favicon.ico HTTP/1.1" 404 3318
+INFO 2024-11-29 00:30:02,770 autoreload C:\Users\Dauren\PycharmProjects\Endterm\Endterm\urls.py changed, reloading.
+INFO 2024-11-29 00:30:03,312 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-29 00:30:14,855 log Unauthorized: /
+WARNING 2024-11-29 00:30:14,855 basehttp "GET / HTTP/1.1" 401 4989
+INFO 2024-11-29 00:30:59,844 autoreload C:\Users\Dauren\PycharmProjects\Endterm\products\urls.py changed, reloading.
+INFO 2024-11-29 00:31:00,338 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-29 00:31:02,211 log Unauthorized: /
+WARNING 2024-11-29 00:31:02,212 basehttp "GET / HTTP/1.1" 401 4989
+WARNING 2024-11-29 00:31:05,156 log Unauthorized: /
+WARNING 2024-11-29 00:31:05,156 basehttp "GET / HTTP/1.1" 401 4989
+INFO 2024-11-29 00:31:20,646 autoreload C:\Users\Dauren\PycharmProjects\Endterm\products\urls.py changed, reloading.
+INFO 2024-11-29 00:31:21,198 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 00:31:37,247 autoreload C:\Users\Dauren\PycharmProjects\Endterm\users\urls.py changed, reloading.
+INFO 2024-11-29 00:31:37,721 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 00:31:40,359 autoreload C:\Users\Dauren\PycharmProjects\Endterm\users\urls.py changed, reloading.
+INFO 2024-11-29 00:31:40,836 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 00:31:51,702 autoreload C:\Users\Dauren\PycharmProjects\Endterm\users\urls.py changed, reloading.
+INFO 2024-11-29 00:31:52,184 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 00:31:59,844 views Login page accessed
+INFO 2024-11-29 00:31:59,889 basehttp "GET / HTTP/1.1" 200 3617
+INFO 2024-11-29 00:32:23,529 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+ERROR 2024-11-29 00:43:29,126 log Internal Server Error: /api/daily-reports/4/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py", line 33, in retrieve
+    cached_report = cache.get(cache_key)
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\commands\core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ERROR 2024-11-29 00:43:29,129 basehttp "GET /api/daily-reports/4/ HTTP/1.1" 500 145956
+ERROR 2024-11-29 00:43:44,373 log Internal Server Error: /api/daily-reports/4/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py", line 33, in retrieve
+    cached_report = cache.get(cache_key)
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\commands\core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ERROR 2024-11-29 00:43:44,374 basehttp "GET /api/daily-reports/4/ HTTP/1.1" 500 145956
+WARNING 2024-11-29 00:46:22,824 log Method Not Allowed: /api/daily-reports/4/
+WARNING 2024-11-29 00:46:22,825 basehttp "POST /api/daily-reports/4/ HTTP/1.1" 405 41
+WARNING 2024-11-29 00:46:47,514 log Not Found: /api/register/
+WARNING 2024-11-29 00:46:47,515 basehttp "POST /api/register/ HTTP/1.1" 404 25617
+WARNING 2024-11-29 00:50:08,913 log Not Found: /api/users/
+WARNING 2024-11-29 00:50:08,913 basehttp "GET /api/users/ HTTP/1.1" 404 25607
+INFO 2024-11-29 00:50:15,675 basehttp "GET /auth/users/ HTTP/1.1" 200 341
+INFO 2024-11-29 00:50:22,120 basehttp "POST /auth/users/ HTTP/1.1" 201 91
+INFO 2024-11-29 00:50:26,501 basehttp "GET /auth/users/ HTTP/1.1" 200 394
+INFO 2024-11-29 00:53:16,590 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-11-29 00:53:16,880 basehttp "GET /api/schema/ HTTP/1.1" 200 136266
+WARNING 2024-11-29 00:53:24,530 log Unauthorized: /api/analytics/api/
+WARNING 2024-11-29 00:53:24,531 basehttp "GET /api/analytics/api/ HTTP/1.1" 401 58
+INFO 2024-11-29 00:53:53,057 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-11-29 00:54:27,582 views Accessed Category List
+INFO 2024-11-29 00:54:27,584 basehttp "GET /api/categories/ HTTP/1.1" 200 134
+INFO 2024-11-29 01:17:23,412 views Register page accessed
+INFO 2024-11-29 01:17:23,427 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-29 01:17:42,105 basehttp "POST /auth/users/ HTTP/1.1" 201 77
+INFO 2024-11-29 01:17:44,556 views Login page accessed
+INFO 2024-11-29 01:17:44,557 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-29 01:17:55,015 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-29 01:17:58,012 views Product list accessed by AnonymousUser
+INFO 2024-11-29 01:17:58,024 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-29 01:18:06,978 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-29 01:18:08,054 views Product list accessed by AnonymousUser
+INFO 2024-11-29 01:18:08,059 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+WARNING 2024-11-29 01:18:15,881 log Not Found: /api/users/
+WARNING 2024-11-29 01:18:15,881 basehttp "GET /api/users/ HTTP/1.1" 404 25607
+INFO 2024-11-29 01:18:25,800 basehttp "GET /auth/users/ HTTP/1.1" 200 439
+ERROR 2024-11-29 01:18:54,515 log Internal Server Error: /users/reset_password/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\views.py", line 244, in reset_password
+    settings.EMAIL.password_reset(self.request, context).send(to)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 74, in send
+    self.render()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 65, in render
+    context = make_context(self.get_context_data(), request=self.request)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 140, in get_context_data
+    context["url"] = settings.PASSWORD_RESET_CONFIRM_URL.format(**context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PASSWORD_RESET_CONFIRM_URL'
+ERROR 2024-11-29 01:18:54,517 basehttp "POST /users/reset_password/ HTTP/1.1" 500 20232
+WARNING 2024-11-29 01:19:26,114 log Method Not Allowed: /users/reset_password/
+WARNING 2024-11-29 01:19:26,114 basehttp "GET /users/reset_password/ HTTP/1.1" 405 40
+ERROR 2024-11-29 01:19:29,201 log Internal Server Error: /users/reset_password/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\views.py", line 244, in reset_password
+    settings.EMAIL.password_reset(self.request, context).send(to)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 74, in send
+    self.render()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 65, in render
+    context = make_context(self.get_context_data(), request=self.request)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 140, in get_context_data
+    context["url"] = settings.PASSWORD_RESET_CONFIRM_URL.format(**context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PASSWORD_RESET_CONFIRM_URL'
+ERROR 2024-11-29 01:19:29,201 basehttp "POST /users/reset_password/ HTTP/1.1" 500 112913
+ERROR 2024-11-29 01:19:44,040 log Internal Server Error: /users/reset_password/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\views.py", line 244, in reset_password
+    settings.EMAIL.password_reset(self.request, context).send(to)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 74, in send
+    self.render()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 65, in render
+    context = make_context(self.get_context_data(), request=self.request)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 140, in get_context_data
+    context["url"] = settings.PASSWORD_RESET_CONFIRM_URL.format(**context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PASSWORD_RESET_CONFIRM_URL'
+ERROR 2024-11-29 01:19:44,040 basehttp "POST /users/reset_password/ HTTP/1.1" 500 112953
+ERROR 2024-11-29 01:21:04,642 log Internal Server Error: /users/reset_password/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\views.py", line 244, in reset_password
+    settings.EMAIL.password_reset(self.request, context).send(to)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 74, in send
+    self.render()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 65, in render
+    context = make_context(self.get_context_data(), request=self.request)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 140, in get_context_data
+    context["url"] = settings.PASSWORD_RESET_CONFIRM_URL.format(**context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PASSWORD_RESET_CONFIRM_URL'
+ERROR 2024-11-29 01:21:04,644 basehttp "POST /users/reset_password/ HTTP/1.1" 500 20232
+WARNING 2024-11-29 01:22:49,760 log Bad Request: /users/reset_password/
+WARNING 2024-11-29 01:22:49,760 basehttp "POST /users/reset_password/ HTTP/1.1" 400 37
+WARNING 2024-11-29 01:22:54,423 log Bad Request: /users/reset_password/
+WARNING 2024-11-29 01:22:54,424 basehttp "POST /users/reset_password/ HTTP/1.1" 400 37
+ERROR 2024-11-29 01:30:12,508 log Internal Server Error: /auth/users/reset_password/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\views.py", line 244, in reset_password
+    settings.EMAIL.password_reset(self.request, context).send(to)
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 74, in send
+    self.render()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 65, in render
+    context = make_context(self.get_context_data(), request=self.request)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\djoser\email.py", line 140, in get_context_data
+    context["url"] = settings.PASSWORD_RESET_CONFIRM_URL.format(**context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PASSWORD_RESET_CONFIRM_URL'
+ERROR 2024-11-29 01:30:12,509 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 500 113019
+INFO 2024-11-29 03:41:30,578 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 03:41:32,398 views Login page accessed
+INFO 2024-11-29 03:41:32,413 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-29 03:41:36,041 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-29 03:41:36,971 views Product list accessed by AnonymousUser
+INFO 2024-11-29 03:41:36,979 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019

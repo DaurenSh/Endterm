@@ -6,7 +6,7 @@ from .views import *
 router = DefaultRouter()
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', LoginPageView.as_view(), name='login_page'),
     path('', include('djoser.urls')),
     path('', include('djoser.urls.jwt')),
     path('register/', RegisterPageView.as_view(), name='register_page'),
