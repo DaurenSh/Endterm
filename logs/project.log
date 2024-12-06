@@ -1649,3 +1649,393 @@ INFO 2024-11-29 03:41:32,413 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
 INFO 2024-11-29 03:41:36,041 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
 INFO 2024-11-29 03:41:36,971 views Product list accessed by AnonymousUser
 INFO 2024-11-29 03:41:36,979 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-11-29 10:45:56,350 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 10:46:34,677 views Login page accessed
+INFO 2024-11-29 10:46:34,749 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-11-29 10:46:34,907 log Not Found: /favicon.ico
+WARNING 2024-11-29 10:46:34,908 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-11-29 10:46:36,541 views Register page accessed
+INFO 2024-11-29 10:46:36,545 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-29 10:47:47,802 views Register page accessed
+INFO 2024-11-29 10:47:47,803 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-11-29 10:47:52,041 views Login page accessed
+INFO 2024-11-29 10:47:52,042 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-29 10:48:53,382 views Transactions list accessed by AnonymousUser
+INFO 2024-11-29 10:48:53,453 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-11-29 10:49:00,155 views Login page accessed
+INFO 2024-11-29 10:49:00,157 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-11-29 10:49:04,092 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-29 10:49:04,788 views Product list accessed by AnonymousUser
+INFO 2024-11-29 10:49:04,802 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+ERROR 2024-11-29 10:49:37,572 log Internal Server Error: /api/daily-reports-list/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py", line 111, in daily_report_list
+    cached_reports = cache.get(cache_key)
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\commands\core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ERROR 2024-11-29 10:49:37,579 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 500 118893
+ERROR 2024-11-29 10:49:52,105 log Internal Server Error: /api/monthly-reports-list/
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\reports\views.py", line 129, in monthly_report_list
+    cached_reports = cache.get(cache_key)
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\commands\core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Users\Dauren\PycharmProjects\Endterm\.venv\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ERROR 2024-11-29 10:49:52,108 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 500 118887
+INFO 2024-11-29 10:51:26,823 views Monthly report list accessed by AnonymousUser
+INFO 2024-11-29 10:51:26,848 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-11-29 10:52:05,990 views Daily report list accessed by AnonymousUser
+INFO 2024-11-29 10:52:06,015 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-11-29 10:52:51,590 views Transactions list accessed by AnonymousUser
+INFO 2024-11-29 10:52:51,634 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-11-29 10:52:52,546 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-11-29 10:52:52,586 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-11-29 20:49:03,187 autoreload Watching for file changes with StatReloader
+INFO 2024-11-29 20:49:04,650 views Login page accessed
+INFO 2024-11-29 20:49:04,696 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-11-29 20:49:04,781 log Not Found: /favicon.ico
+WARNING 2024-11-29 20:49:04,782 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 14:08:45,685 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:08:53,329 views Login page accessed
+INFO 2024-12-05 14:08:53,397 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-05 14:08:53,971 log Not Found: /favicon.ico
+WARNING 2024-12-05 14:08:53,972 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 14:09:01,254 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-05 14:09:02,465 views Product list accessed by AnonymousUser
+INFO 2024-12-05 14:09:02,487 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-12-05 14:11:01,302 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:11:15,335 views Login page accessed
+INFO 2024-12-05 14:11:15,354 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-05 14:11:15,492 log Not Found: /favicon.ico
+WARNING 2024-12-05 14:11:15,493 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 14:11:19,655 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-05 14:11:20,493 views Product list accessed by AnonymousUser
+INFO 2024-12-05 14:11:20,505 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-12-05 14:11:21,619 views Login page accessed
+INFO 2024-12-05 14:11:21,620 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-12-05 14:11:22,835 views Register page accessed
+INFO 2024-12-05 14:11:22,851 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-12-05 14:11:24,214 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-05 14:11:24,231 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-05 14:11:25,925 views Daily report list accessed by AnonymousUser
+INFO 2024-12-05 14:11:25,941 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-05 14:11:27,634 views Monthly report list accessed by AnonymousUser
+INFO 2024-12-05 14:11:27,649 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-05 14:11:29,400 views Transactions list accessed by AnonymousUser
+INFO 2024-12-05 14:11:29,430 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-12-05 14:11:50,260 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2024-12-05 14:11:50,267 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 14:11:50,375 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2024-12-05 14:11:50,566 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-12-05 14:11:50,567 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-12-05 14:11:50,568 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-12-05 14:11:50,572 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-12-05 14:11:50,573 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-12-05 14:11:50,580 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-12-05 14:11:50,590 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-12-05 14:22:36,620 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:22:49,549 autoreload C:\Users\Dauren\PycharmProjects\Endterm\transactions\views.py changed, reloading.
+INFO 2024-12-05 14:22:50,355 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:23:07,391 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:23:28,597 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:23:43,024 views Login page accessed
+INFO 2024-12-05 14:23:43,046 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-05 14:23:43,180 log Not Found: /favicon.ico
+WARNING 2024-12-05 14:23:43,180 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 14:23:47,979 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-05 14:23:48,960 views Product list accessed by AnonymousUser
+INFO 2024-12-05 14:23:48,971 basehttp "GET /api/product-list/ HTTP/1.1" 200 5019
+INFO 2024-12-05 14:23:50,282 views Login page accessed
+INFO 2024-12-05 14:23:50,283 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-12-05 14:23:50,663 views Register page accessed
+INFO 2024-12-05 14:23:50,664 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-12-05 14:23:51,097 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-05 14:23:51,115 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-05 14:23:51,595 views Daily report list accessed by AnonymousUser
+INFO 2024-12-05 14:23:51,607 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-05 14:23:54,358 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-05 14:23:54,373 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-05 14:23:56,986 views Register page accessed
+INFO 2024-12-05 14:23:56,987 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-12-05 14:23:58,847 views Monthly report list accessed by AnonymousUser
+INFO 2024-12-05 14:23:58,856 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-05 14:24:00,957 views Transactions list accessed by AnonymousUser
+INFO 2024-12-05 14:24:00,982 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-12-05 14:24:04,460 views Returning monthly reports from cache for user AnonymousUser
+INFO 2024-12-05 14:24:04,461 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-05 14:24:06,307 views Returning daily reports from cache for user AnonymousUser
+INFO 2024-12-05 14:24:06,309 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-05 14:24:27,382 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 14:24:27,406 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2024-12-05 14:24:32,858 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 14:24:32,895 basehttp "GET /admin/ HTTP/1.1" 200 14303
+INFO 2024-12-05 14:24:33,014 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-12-05 14:24:33,024 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-05 14:24:33,024 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-05 14:24:33,025 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-05 14:24:37,436 basehttp "GET /admin/products/product/add/ HTTP/1.1" 200 15842
+INFO 2024-12-05 14:24:37,454 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2024-12-05 14:24:37,459 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-05 14:24:37,469 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2024-12-05 14:24:37,471 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 14:24:37,474 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2024-12-05 14:24:37,475 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-12-05 14:24:37,477 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2024-12-05 14:24:37,484 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-12-05 14:24:37,487 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-12-05 14:24:37,487 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-12-05 14:24:37,503 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-12-05 14:24:37,514 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-12-05 14:24:37,524 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-05 14:24:37,545 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-12-05 14:24:56,394 basehttp "POST /admin/products/product/add/ HTTP/1.1" 302 0
+INFO 2024-12-05 14:24:56,460 basehttp "GET /admin/products/product/ HTTP/1.1" 200 13571
+INFO 2024-12-05 14:24:56,472 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 14:24:56,476 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2024-12-05 14:24:56,486 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-12-05 14:24:56,495 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-12-05 14:24:56,496 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-12-05 14:29:10,395 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:30:02,246 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:34:09,686 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 14:34:30,958 views Login page accessed
+INFO 2024-12-05 14:34:30,976 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-05 14:34:31,169 log Not Found: /favicon.ico
+WARNING 2024-12-05 14:34:31,170 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 14:34:40,571 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-05 14:34:41,926 views Product list accessed by admin (Admin)
+INFO 2024-12-05 14:34:41,932 basehttp "GET /api/product-list/ HTTP/1.1" 200 5619
+INFO 2024-12-05 14:34:54,111 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-05 14:34:54,125 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-05 14:34:55,771 views Daily report list accessed by admin (Admin)
+INFO 2024-12-05 14:34:55,778 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-05 14:34:56,908 views Monthly report list accessed by admin (Admin)
+INFO 2024-12-05 14:34:56,914 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-05 14:34:57,875 views Transactions list accessed by admin (Admin)
+INFO 2024-12-05 14:34:57,897 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5846
+INFO 2024-12-05 19:11:30,548 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 19:11:46,349 views Login page accessed
+INFO 2024-12-05 19:11:46,365 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-05 19:11:46,424 log Not Found: /favicon.ico
+WARNING 2024-12-05 19:11:46,424 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-05 19:12:05,036 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-12-05 19:12:07,851 basehttp "GET /api/schema/ HTTP/1.1" 200 136266
+INFO 2024-12-05 20:12:16,127 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 20:12:44,100 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+WARNING 2024-12-05 20:12:56,756 log Not Found: /api/users/
+WARNING 2024-12-05 20:12:56,757 basehttp "GET /api/users/ HTTP/1.1" 404 25607
+WARNING 2024-12-05 20:13:06,729 log Not Found: /api/users/
+WARNING 2024-12-05 20:13:06,729 basehttp "GET /api/users/ HTTP/1.1" 404 25607
+WARNING 2024-12-05 20:13:10,541 log Not Found: /api/users/1
+WARNING 2024-12-05 20:13:10,542 basehttp "GET /api/users/1 HTTP/1.1" 404 25610
+WARNING 2024-12-05 20:13:35,189 log Not Found: /auth/products/
+WARNING 2024-12-05 20:13:35,189 basehttp "GET /auth/products/ HTTP/1.1" 404 25459
+INFO 2024-12-05 20:13:50,397 views Accessed Product List
+INFO 2024-12-05 20:13:50,405 basehttp "GET /api/products/ HTTP/1.1" 200 856
+INFO 2024-12-05 20:14:37,205 basehttp "PUT /api/products/4/ HTTP/1.1" 200 128
+INFO 2024-12-05 20:17:07,776 basehttp "PATCH /api/products/4/ HTTP/1.1" 200 129
+INFO 2024-12-05 20:41:23,435 views Login page accessed
+INFO 2024-12-05 20:41:23,478 basehttp "GET / HTTP/1.1" 200 3617
+INFO 2024-12-05 20:41:39,880 basehttp "GET /auth/users/1 HTTP/1.1" 301 0
+WARNING 2024-12-05 20:41:39,921 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:41:39,922 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+INFO 2024-12-05 20:41:40,109 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-12-05 20:41:40,119 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-12-05 20:41:40,121 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-12-05 20:41:40,125 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-12-05 20:41:40,126 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-12-05 20:41:40,134 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-12-05 20:41:40,137 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-12-05 20:41:40,137 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-12-05 20:41:40,138 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-12-05 20:41:40,157 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-12-05 20:41:40,161 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-12-05 20:41:40,179 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-12-05 20:42:03,038 basehttp "GET /auth/login HTTP/1.1" 301 0
+INFO 2024-12-05 20:42:03,041 views Login page accessed
+INFO 2024-12-05 20:42:03,042 basehttp "GET /auth/login/ HTTP/1.1" 200 3617
+INFO 2024-12-05 20:42:53,167 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+WARNING 2024-12-05 20:42:55,634 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:42:55,635 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+INFO 2024-12-05 20:42:56,162 views Product list accessed by AnonymousUser
+INFO 2024-12-05 20:42:56,175 basehttp "GET /api/product-list/ HTTP/1.1" 200 5621
+WARNING 2024-12-05 20:42:56,489 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:42:56,490 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+WARNING 2024-12-05 20:42:56,672 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:42:56,673 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+WARNING 2024-12-05 20:43:04,104 log Unauthorized: /auth/users/<int:1>/
+WARNING 2024-12-05 20:43:04,105 basehttp "GET /auth/users/%3Cint:1%3E/ HTTP/1.1" 401 5261
+WARNING 2024-12-05 20:43:33,915 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:43:33,916 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+WARNING 2024-12-05 20:43:47,104 log Unauthorized: /auth/users/1/
+WARNING 2024-12-05 20:43:47,104 basehttp "GET /auth/users/1/ HTTP/1.1" 401 5209
+INFO 2024-12-06 03:50:50,960 autoreload Watching for file changes with StatReloader
+INFO 2024-12-06 03:50:52,558 views Login page accessed
+INFO 2024-12-06 03:50:52,647 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-06 03:50:52,753 log Not Found: /favicon.ico
+WARNING 2024-12-06 03:50:52,753 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-06 03:51:01,261 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-12-06 03:51:01,498 basehttp "GET /api/schema/ HTTP/1.1" 200 136266
+WARNING 2024-12-06 03:55:55,154 log Unauthorized: /api/categories/
+WARNING 2024-12-06 03:55:55,154 basehttp "PATCH /api/categories/ HTTP/1.1" 401 183
+WARNING 2024-12-06 03:56:12,327 log Unauthorized: /api/categories/
+WARNING 2024-12-06 03:56:12,328 basehttp "POST /api/categories/ HTTP/1.1" 401 183
+INFO 2024-12-06 03:56:21,428 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 03:56:31,705 views Category created by user: admin (Admin)
+WARNING 2024-12-06 03:56:31,705 log Bad Request: /api/categories/
+WARNING 2024-12-06 03:56:31,705 basehttp "POST /api/categories/ HTTP/1.1" 400 36
+INFO 2024-12-06 03:56:51,162 views Category created by user: admin (Admin)
+INFO 2024-12-06 03:56:51,168 basehttp "POST /api/categories/ HTTP/1.1" 201 41
+WARNING 2024-12-06 03:57:05,897 log Unauthorized: /api/categories/
+WARNING 2024-12-06 03:57:05,898 basehttp "POST /api/categories/ HTTP/1.1" 401 58
+WARNING 2024-12-06 03:57:34,908 log Not Found: /api/monthly-report/
+WARNING 2024-12-06 03:57:34,908 basehttp "POST /api/monthly-report/ HTTP/1.1" 404 25635
+WARNING 2024-12-06 03:57:53,314 log Unauthorized: /api/monthly-reports/
+WARNING 2024-12-06 03:57:53,315 basehttp "POST /api/monthly-reports/ HTTP/1.1" 401 58
+WARNING 2024-12-06 03:57:55,668 log Bad Request: /api/monthly-reports/
+WARNING 2024-12-06 03:57:55,668 basehttp "POST /api/monthly-reports/ HTTP/1.1" 400 125
+INFO 2024-12-06 04:59:54,460 autoreload Watching for file changes with StatReloader
+INFO 2024-12-06 05:00:00,792 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 05:00:08,297 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-06 05:18:13,608 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 05:18:22,271 basehttp "GET /api/schema/ HTTP/1.1" 200 62987
+INFO 2024-12-06 05:19:05,687 basehttp "GET /api/schema/ HTTP/1.1" 200 62987
+INFO 2024-12-06 06:16:23,557 basehttp "GET /api/docs/swagger/ HTTP/1.1" 200 4652
+INFO 2024-12-06 06:16:23,713 basehttp "GET /api/schema/ HTTP/1.1" 200 136266
+INFO 2024-12-06 06:20:32,944 autoreload Watching for file changes with StatReloader
+INFO 2024-12-06 06:20:50,883 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-06 06:20:52,416 views Product list accessed by AnonymousUser
+INFO 2024-12-06 06:20:52,463 basehttp "GET /api/product-list/ HTTP/1.1" 200 5621
+INFO 2024-12-06 06:21:02,598 views Register page accessed
+INFO 2024-12-06 06:21:02,613 basehttp "GET /auth/register/ HTTP/1.1" 200 4465
+INFO 2024-12-06 06:21:03,729 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-06 06:21:03,744 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-06 06:21:05,253 views Daily report list accessed by AnonymousUser
+INFO 2024-12-06 06:21:05,268 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-06 06:21:06,453 views Monthly report list accessed by AnonymousUser
+INFO 2024-12-06 06:21:06,468 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-06 06:21:06,956 views Transactions list accessed by AnonymousUser
+INFO 2024-12-06 06:21:06,992 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5850
+INFO 2024-12-06 06:21:07,806 views Returning monthly reports from cache for user AnonymousUser
+INFO 2024-12-06 06:21:07,808 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-06 06:21:08,280 views Transactions list accessed by AnonymousUser
+INFO 2024-12-06 06:21:08,297 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5850
+INFO 2024-12-06 06:21:28,951 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-06 06:21:28,965 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-06 06:22:38,135 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 06:22:49,478 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-06 06:51:16,642 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 06:51:41,778 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 06:52:01,988 views Product created by user: admin (Admin)
+WARNING 2024-12-06 06:52:01,989 log Bad Request: /api/products/
+WARNING 2024-12-06 06:52:01,989 basehttp "POST /api/products/ HTTP/1.1" 400 40
+INFO 2024-12-06 06:52:24,865 views Accessed Product List
+INFO 2024-12-06 06:52:24,870 basehttp "GET /api/products/ HTTP/1.1" 200 858
+INFO 2024-12-06 06:52:32,634 views Product created by user: admin (Admin)
+WARNING 2024-12-06 06:52:32,635 log Bad Request: /api/products/
+WARNING 2024-12-06 06:52:32,636 basehttp "POST /api/products/ HTTP/1.1" 400 40
+INFO 2024-12-06 06:52:52,008 views Product created by user: admin (Admin)
+WARNING 2024-12-06 06:52:52,009 log Bad Request: /api/products/
+WARNING 2024-12-06 06:52:52,009 basehttp "POST /api/products/ HTTP/1.1" 400 40
+INFO 2024-12-06 06:52:58,786 views Product created by user: admin (Admin)
+INFO 2024-12-06 06:52:58,792 basehttp "POST /api/products/ HTTP/1.1" 201 143
+INFO 2024-12-06 06:54:08,181 basehttp "POST /auth/jwt/create HTTP/1.1" 200 483
+INFO 2024-12-06 06:54:18,638 views Product created by user: admin (Admin)
+INFO 2024-12-06 06:54:18,644 basehttp "POST /api/products/ HTTP/1.1" 201 124
+INFO 2024-12-06 06:54:25,425 views Accessed Product List
+INFO 2024-12-06 06:54:25,433 basehttp "GET /api/products/ HTTP/1.1" 200 1127
+INFO 2024-12-06 10:05:56,804 autoreload Watching for file changes with StatReloader
+INFO 2024-12-06 10:06:21,321 views Login page accessed
+INFO 2024-12-06 10:06:21,379 basehttp "GET / HTTP/1.1" 200 3617
+WARNING 2024-12-06 10:06:21,540 log Not Found: /favicon.ico
+WARNING 2024-12-06 10:06:21,541 basehttp "GET /favicon.ico HTTP/1.1" 404 14383
+INFO 2024-12-06 10:06:36,242 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-12-06 10:06:37,366 views Product list accessed by AnonymousUser
+INFO 2024-12-06 10:06:37,394 basehttp "GET /api/product-list/ HTTP/1.1" 200 6852
+INFO 2024-12-06 10:06:45,578 basehttp "GET /api/analytics/ HTTP/1.1" 200 4233
+INFO 2024-12-06 10:06:45,609 basehttp "GET /api/analytics/api/ HTTP/1.1" 200 93
+INFO 2024-12-06 10:07:00,380 views Daily report list accessed by AnonymousUser
+INFO 2024-12-06 10:07:00,393 basehttp "GET /api/daily-reports-list/ HTTP/1.1" 200 3442
+INFO 2024-12-06 10:07:07,299 views Monthly report list accessed by AnonymousUser
+INFO 2024-12-06 10:07:07,311 basehttp "GET /api/monthly-reports-list/ HTTP/1.1" 200 2782
+INFO 2024-12-06 10:07:10,613 views Transactions list accessed by AnonymousUser
+INFO 2024-12-06 10:07:10,653 basehttp "GET /api/transactions-list/ HTTP/1.1" 200 5850
